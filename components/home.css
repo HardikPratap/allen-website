@@ -1,7 +1,7 @@
 .container{
 margin-top: 30px;
-   
 
+   
 }
 
 .banner{
@@ -14,3 +14,58 @@ margin-top: 30px;
 .banner .bannerTop{
     max-width: 100%;
 }
+
+.container-first{
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 176px;
+    gap: 30%;
+    align-items: center;
+}
+
+.text-left{
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    font-size: 2rem;
+        line-height: 2.25rem;
+        letter-spacing: -.02em;
+        font-weight: 700;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        padding-bottom: 2.5rem;
+}
+
+.subject{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-heading{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.subject-btn{
+    display: flex;
+    font-size: .86rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    gap: .75rem;
+}
+
+.neet-btn, .jee-btn, .grade-btn{
+    border: 2px solid #698fe2;
+    padding: 10px 20px;
+    border-radius: 52px;
+    text-wrap: nowrap;
+}
+
+
+
+.slider-container{
+justify-content: space-between;
+}
+
