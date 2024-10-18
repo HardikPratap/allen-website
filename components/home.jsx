@@ -1,6 +1,7 @@
 import React from 'react'
 import bannerImg from "../src/assets/topBanner.webp"
 import CarouselTop from "./banner"
+import CarouselTwo from "./banner2"
 import "./home.css"
 
 function home() {
@@ -31,12 +32,13 @@ function home() {
           
           <div className="slider-container">
             <CarouselTop />
-
-
           </div>
         </div>
-
+        <div className="container-two">
         
+          <CarouselTwo />
+          <button>Hii</button>
+        </div>
       
     </div>
   )

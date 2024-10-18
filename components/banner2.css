@@ -1,0 +1,22 @@
+.embla2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.embla__container2 {
+    display: flex;
+    transition: transform .3s ease;
+}
+
+.embla__slide2 {
+    min-width: 100%; /* Adjust based on how you want to display slides */
+    height: auto; /* or set a specific height */
+    width: 66rem;
+}
+
+img {
+    width: 100%; /* Makes images responsive */
+    height: auto;
+    border-radius: 2rem;
+    width: 66rem;
+}
