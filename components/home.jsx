@@ -2,6 +2,7 @@ import React from 'react'
 import bannerImg from "../src/assets/topBanner.webp"
 import CarouselTop from "./banner"
 import CarouselTwo from "./banner2"
+import Container3 from "./container3"
 import "./home.css"
 
 function home() {
@@ -37,7 +38,10 @@ function home() {
         <div className="container-two">
         
           <CarouselTwo />
-          <button>Hii</button>
+        </div>
+
+        <div className="container-three">
+          <Container3/>
         </div>
       
     </div>

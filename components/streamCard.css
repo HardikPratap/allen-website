@@ -1,0 +1,45 @@
+
+.card-container {
+    width: 20rem;/* Adjust the width as needed */
+    height: 15rem; /* Adjust the height as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1a2439;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    display: flex;
+    padding: 1.5rem;
+  }
+  
+  .card-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: none;
+    text-align: start;
+
+  }
+  
+  .view-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: start;
+    background: none;
+  }
+  
+  .view-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
