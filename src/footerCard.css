@@ -1,0 +1,12 @@
+.footer-section h1{
+    padding-bottom: .5rem;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: .875rem;
+    font-family: Plus Jakarta Sans;
+}
+.footer-subheadings h3{
+    line-height: 1.25;
+    font-weight: 500;
+    font-size: .75rem;
+}
