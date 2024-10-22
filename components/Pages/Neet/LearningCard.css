@@ -1,0 +1,54 @@
+.learning-container{
+   display: flex;
+   justify-content: space-between;
+   padding: 1.5rem;
+   background-color: #1a2439;
+   border-radius: 1rem;
+   align-items: center;
+   cursor: pointer;
+   height: 104px;
+    width: 528px;
+
+}
+
+.text-logo{
+    display: flex;
+    align-items: center;
+    background: none;
+}
+
+.text-logo .text {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: none;
+
+}
+
+.text-logo .logo{
+    width: 3.5rem;
+    height: 3.5rem;
+    align-content: center;
+    text-align: center;
+    background-color: #61c3b6;
+    border-radius: .75rem;
+}
+
+.text-logo .logo i{
+    font-size: 30px;
+    align-items: center;
+    background-color: inherit;
+}
+
+.arrow{
+    /* width: 30%; */
+    margin-left: auto; 
+    background: none;
+}
+
+.arrow i{
+    font-size: 24px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 999px;
+}

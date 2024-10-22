@@ -1,11 +1,12 @@
 import React from 'react';
 import "./Neet.css"
 import CardContainer from "./CardContainer"
-import CoachingOption from "./CoachingOption"
+import CardLearning from "./LearningCard"
 import img1 from "../../../src/assets/neet1.webp"
 import img2 from "../../../src/assets/neet2.webp"
 import bannerimg2 from "../../../src/assets/neet_banner2.webp"
 import bannerimg3 from "../../../src/assets/neet_banner3.png"
+import LearningCard from './LearningCard';
 
 
 function Neet() {
@@ -53,6 +54,12 @@ function Neet() {
 
       <div className="neet-banner4">
         <div className="title">Alternate Coaching you can explore</div>
+        <div className="neet-learning">
+          <LearningCard text="Distance Learning" class="ri-book-open-fill" />
+          <LearningCard text="Online Test Series" class="ri-flask-fill"/>
+
+
+        </div>
 
       </div>
     </div>
