@@ -41,7 +41,7 @@ function home() {
         </div>
 
         <div className="container-three">
-          <Container3/>
+          <Container3 title="Discover the perfect online program"/>
         </div>
       
     </div>

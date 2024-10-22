@@ -1,0 +1,87 @@
+.container-neet{
+    padding-bottom: 0;
+    min-width: unset;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.div-container{   
+    padding-left: 176px;
+    padding-right: 176px;
+    padding-top: 46px;
+    align-items: center;
+}
+
+.div-container span{
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.neet-coaching{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 176px;
+    padding-right: 176px;
+    padding-top: 46px;
+    min-width: unset;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-neet{
+    display: flex;
+    flex-direction: column;
+}
+.text-neet .heading-neet{
+    font-weight: 600;
+    font-size: 2rem;
+        line-height: 2.25rem;
+        letter-spacing: -.02em;
+}
+
+.text-neet .subheading-neet{
+    color: #d8dbdf;
+    font-weight: 400;
+    padding-top: 40px;
+    line-height: 2.5rem;
+}
+.img-neet img{
+    max-width: 100%;
+}
+.img-neet{
+    justify-content: center;
+    margin-left: 20%;
+}
+
+.neet-banner , .neet-banner2{
+    width: 100%;
+}
+
+.neet-banner img , .neet-banner2 img{
+    align-items: center;
+    padding: 3rem 11rem;
+    width: 100%;
+}
+
+
+/* ----------------------- */
+.neet-banner3 , .neet-banner4{
+    width: 100%;
+    padding: 3rem 11rem;
+    min-width: unset;
+    margin-left: auto;
+    margin-right: auto;
+}
+.neet-banner3 .title , .neet-banner4 .title{
+        font-size: 1.7rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        background: none;
+        text-align: start;
+        margin-bottom: 20px;
+
+}

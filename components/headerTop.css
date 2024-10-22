@@ -38,6 +38,7 @@
     font-size: .875rem;
     cursor: pointer;
     text-wrap: nowrap;
+    background: none;
     
 }
 
@@ -47,6 +48,7 @@
 
 .list-items a{
     text-decoration: none;
+    background: none;
 
 }
 .right-header{

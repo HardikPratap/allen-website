@@ -13,7 +13,7 @@ function headerTop() {
               </Link>
                 <ul className="list-items">
 
-                    <li className="list-links"> <Link to="/Exams">Exams</Link>
+                    <li className="list-links"> <Link to="/">Exams</Link>
                       <ul className="dropdown">
                         <li className="dropdown-link"><Link to="/Neet">NEET</Link></li>
                           <ul className="dropdown-sub">

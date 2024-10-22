@@ -6,10 +6,10 @@ import image2 from "../src/assets/card-img2.webp"
 import image3 from "../src/assets/card-img3.webp"
 
 
-function container3() {
+function container3(props) {
   return (
     <div className='container-3'>
-      <div className="title">Discover the perfect online program</div>
+      <div className="title">{props.title}</div>
       <div className="stream-card">
         < Card title="JEE" image={image1}/>
         < Card title="NEET" image={image2}/>
