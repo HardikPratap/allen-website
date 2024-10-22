@@ -1,11 +1,12 @@
 import React from 'react';
 import "./Neet.css"
 import CardContainer from "./CardContainer"
-import CardLearning from "./LearningCard"
+import CaraoselContainer from './CaraoselContainer';
 import img1 from "../../../src/assets/neet1.webp"
 import img2 from "../../../src/assets/neet2.webp"
 import bannerimg2 from "../../../src/assets/neet_banner2.webp"
 import bannerimg3 from "../../../src/assets/neet_banner3.png"
+import ClassRoomImg from "../../../src/assets/neetClassRoom.webp"
 import LearningCard from './LearningCard';
 
 
@@ -62,6 +63,26 @@ function Neet() {
         </div>
 
       </div>
+
+      <CaraoselContainer />
+
+      <div className="neet-banner5">
+        <div className="title">Looking for a classroom based program?</div>
+        <div className="neet-classroom-container">
+          <div className="neet-classroom-text">
+            <div className="neet-classroom-heading">Present in 53 cities with</div>
+            <div className="neet-classroom-subheading">250+ classrooms</div>
+            <div className="neet-classroom-button">Find a Center</div>
+            
+
+          </div>
+          <div className="neet-classroom-img">
+            <img src={ClassRoomImg} alt="image" />
+          </div>
+        </div>
+      </div>
+
+
     </div>
 
   );

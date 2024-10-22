@@ -1,0 +1,46 @@
+.caraosel-container-neet {
+    text-align: center;
+    width: 100%;
+    padding: 3rem 11rem;
+    min-width: unset;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .caraosel-container-neet h2{
+    font-size: 1.75rem;
+    line-height: 2rem;
+    letter-spacing: -.02em;
+    font-weight: 500;
+  }
+
+  .caraosel-container-neet h5{
+    margin-top: .5rem;
+    font-size: .875rem;
+    font-size: 1.25rem;
+  }
+  
+  .embla-neet {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .embla__container-neet {
+    display: flex;
+  }
+  
+  .embla__slide-neet {
+    position: relative;
+    min-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .embla__slide-neet img {
+    width: 66rem;
+    height: auto;
+    display: block;
+    border-radius: 2rem;
+  }
+

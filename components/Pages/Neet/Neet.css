@@ -69,7 +69,7 @@
 
 
 /* ----------------------- */
-.neet-banner3 , .neet-banner4{
+.neet-banner3 , .neet-banner4 , .neet-banner5{
     width: 100%;
     padding: 3rem 11rem;
     min-width: unset;
@@ -93,4 +93,64 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
     margin-top: 1.5rem;
+}
+
+
+/* -------------------------------------- */
+
+.neet-classroom-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: .5rem;
+    border-radius: 2rem;
+    background-color: #1a2439;
+}
+
+.neet-classroom-text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+    padding-bottom: 1rem;
+    justify-content: center;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+}
+.neet-classroom-heading{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.neet-classroom-subheading{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    color: #d8dbdf;
+    line-height: 2;
+}
+.neet-classroom-button{
+    font-size: 1rem;
+    padding-top: .875rem;
+    padding-bottom: .875rem;
+    width: 12rem;
+    line-height: 1.25;
+    font-weight: 500;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+.neet-classroom-button:hover{
+    background-color:#445c91;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+
+.neet-classroom-img img{
+    width: 100%;
+    height: auto;
 }
