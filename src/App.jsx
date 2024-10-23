@@ -6,6 +6,7 @@ import Exam from "./Exams";
 import Programs from "./Programs";
 import Scholarships from "./Scholarship";
 import Neet from '../components/Pages/Neet/Neet';
+import Jee from "../components/Pages/Jee/Jee"
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='Exams' element={<Exam />} />
           <Route path='Neet' element={<Neet />} />
+          <Route path='Jee' element={<Jee />} />
           <Route path='Programs' element={<Programs />} />
           <Route path='Scholarship' element={<Scholarships />} />
         </Route>
