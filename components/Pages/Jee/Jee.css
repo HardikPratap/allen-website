@@ -21,7 +21,7 @@
     margin-right: 5px;
 }
 
-.jee-coaching{
+.jee-coaching {
     max-width: 100%;
     display: flex;
     flex-direction: row;
@@ -31,6 +31,10 @@
     min-width: unset;
     margin-left: auto;
     margin-right: auto;
+}
+
+.coaching-card-jee{
+    padding-top: 40px;
 }
 .text-jee{
     display: flex;

@@ -93,30 +93,28 @@
 
 .dropdown {
     list-style-type: none;
-    position:absolute;
-    top: 100%; 
+    position: absolute;
+    top: 100%; /* Adjusted from 100% to 110% to make it appear lower */
     width: 15rem;
     left: 0;
     background-color: #233a6d;
     border: 1px solid #121621;
-    box-shadow: 0 4px 10px#233a6d;
-    border-radius: 5px;
-    padding:8px;
-    opacity: 0; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 8px;
+    opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.4s ease, transform 0.3s ease;
     z-index: 100;
-    transition-duration: .15s;
     line-height: 1.25;
     text-align: start;
-    padding-bottom: .5rem;
-    padding-left: .5rem !important;
-    padding-right: .5rem !important;
-
-  }
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+}
   
-  .dropdown-link {
+  .dropdown-link , .dropdown-link-sub {
     padding: 0.5rem 1rem;
     background-color: #233a6d;
     border-radius: 10px;
@@ -126,30 +124,38 @@
     position: relative;
   }
   
-  .dropdown-link:hover {
+  .dropdown-link:hover ,.dropdown-link-sub:hover {
     background-color: #3c65bf;
   }
   
   /* Show sub-links on hover */
-  .list-links:hover .dropdown {
+  .list-links:hover .dropdown,
+.list-links.active .dropdown {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0); /* Move into position */
-  }
+    transform: translateY(0);
+}
   
   .dropdown-sub {
     position: absolute;
     top: 0;
-    left: 100%; /* Position it to the right of the parent dropdown */
+    left: 110%;
+    width: 15rem;
     background-color: #233a6d;
     border: 1px solid #121621;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     opacity: 0;
     visibility: hidden;
-    transform: translateX(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.3s ease;
     z-index: 100;
     padding: 8px;
+    line-height: 1.25;
+    text-align: start;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
 }
 
 /* Show sub-dropdown on hover */
@@ -163,3 +169,4 @@
 .header-main, .dropdown, .dropdown-sub {
     z-index: 1000;
 }
+
