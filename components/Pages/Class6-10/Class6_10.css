@@ -1,0 +1,156 @@
+.container-class6_10{
+    padding-bottom: 0;
+    min-width: unset;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.container-class6_10 .div-container{   
+    padding-left: 176px;
+    padding-right: 176px;
+    padding-top: 46px;
+    align-items: center;
+}
+
+.div-container span{
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.class6_10-coaching{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 176px;
+    padding-right: 176px;
+    padding-top: 46px;
+    min-width: unset;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-class6_10{
+    display: flex;
+    flex-direction: column;
+}
+.text-class6_10 .heading-class6_10{
+    font-weight: 600;
+    font-size: 2rem;
+        line-height: 2.25rem;
+        letter-spacing: -.02em;
+}
+
+.text-class6_10 .subheading-class6_10{
+    color: #d8dbdf;
+    font-weight: 400;
+    padding-top: 40px;
+    line-height: 2.5rem;
+}
+.img-class6_10 img{
+    max-width: 100%;
+}
+.img-class6_10{
+    justify-content: center;
+    margin-left: 20%;
+}
+
+.class6_10-banner , .class6_10-banner2{
+    width: 100%;
+}
+
+.class6_10-banner img , .class6_10-banner2 img{
+    align-items: center;
+    padding: 3rem 11rem;
+    width: 100%;
+}
+
+
+/* ----------------------- */
+.class6_10-banner3 , .class6_10-banner4 , .class6_10-banner5{
+    width: 100%;
+    padding: 3rem 11rem;
+    min-width: unset;
+    margin-left: auto;
+    margin-right: auto;
+}
+.class6_10-banner3 .title , .class6_10-banner4 .title{
+        font-size: 1.7rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        background: none;
+        text-align: start;
+        margin-bottom: 20px;
+
+}
+
+/* ----------------------------- */
+
+.class6_10-learning{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+
+/* -------------------------------------- */
+
+.class6_10-classroom-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: .5rem;
+    border-radius: 2rem;
+    background-color: #1a2439;
+}
+
+.class6_10-classroom-text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+    padding-bottom: 1rem;
+    justify-content: center;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+}
+.class6_10-classroom-heading{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.class6_10-classroom-subheading{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    color: #d8dbdf;
+    line-height: 2;
+}
+.class6_10-classroom-button{
+    font-size: 1rem;
+    padding-top: .875rem;
+    padding-bottom: .875rem;
+    width: 12rem;
+    line-height: 1.25;
+    font-weight: 500;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+.class6_10-classroom-button:hover{
+    background-color:#445c91;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+
+.class6_10-classroom-img img{
+    width: 100%;
+    height: auto;
+}

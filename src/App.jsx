@@ -8,7 +8,7 @@ import Scholarships from "./Scholarship";
 import Neet from '../components/Pages/Neet/Neet';
 import Jee from "../components/Pages/Jee/Jee"
 import './App.css';
-import Class6_10 from '../components/Pages/Class6-10/Class6_10';
+import Class10 from '../components/Pages/Class6-10/Class6_10';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route path='Exams' element={<Exam />} />
           <Route path='Neet' element={<Neet />} />
           <Route path='Jee' element={<Jee />} />
-          <Route path='Class6-10' element={<Class6_10 />} />
+          <Route path='Class10' element={<Class10 />} />
           <Route path='Programs' element={<Programs />} />
           <Route path='Scholarship' element={<Scholarships />} />
         </Route>

@@ -22,7 +22,7 @@ function headerTop() {
                             <li className="dropdown-link-sub">Class 12th Plus</li>
                           </ul>
                         <li className="dropdown-link"><Link to="/JEE">JEE</Link></li>
-                        <li className="dropdown-link">Class 10</li>
+                        <li className="dropdown-link"><Link to="/Class10">Class 10</Link></li>
                       </ul>
                     </li>
 
