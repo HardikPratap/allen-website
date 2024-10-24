@@ -1,14 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import MyImageSvg from '../src/assets/logo_dark.svg';
 import { Link } from 'react-router-dom';
 import "./headerTop.css";
 
 function HeaderTop() {
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const hideTimeout = useRef(null); // Create a ref to store the timeout
 
   // Handle dropdown click to toggle visibility
   const handleDropdownClick = (index) => {
-    setActiveDropdown(activeDropdown === index ? null : index);
+    if (activeDropdown === index) {
+      setActiveDropdown(null); // Close the dropdown if clicked twice
+    } else {
+      setActiveDropdown(index); // Open the specific dropdown
+    }
+  };
+
+  const handleLinkClick = () => {
+    setActiveDropdown(null); // Close dropdown on link click
+  };
+
+  const handleMouseLeave = () => {
+    hideTimeout.current = setTimeout(() => {
+      setActiveDropdown(null); // Set dropdown to null after timeout
+    }, 300); // 300 milliseconds = 0.3 seconds
+  };
+
+  const handleMouseEnter = () => {
+    if (hideTimeout.current) {
+      clearTimeout(hideTimeout.current);
+    }
   };
 
   return (
@@ -20,30 +41,34 @@ function HeaderTop() {
           </Link>
           <ul className="list-items">
 
-            <li className={`list-links ${activeDropdown === 1 ? 'active' : ''}`} onClick={() => handleDropdownClick(1)}> 
-              <Link to="/">Exams</Link>
+            <li className={`list-links ${activeDropdown === 1 ? 'active' : ''}`} onClick={() => handleDropdownClick(1)}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}> 
+              Exams
               <ul className="dropdown">
                 <li className="dropdown-link">
-                  <Link to="/Neet">NEET</Link>
-                  <ul className="dropdown-sub">
-                    <li className="dropdown-link-sub">Class 11th</li>
-                    <li className="dropdown-link-sub">Class 12th</li>
-                    <li className="dropdown-link-sub">Class 12th Plus</li>
+                  <Link to="/Neet" onClick={handleLinkClick} className='dropdown-link-container' >
+                  NEET
+                  </Link>
+                  <ul className="dropdown-sub" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                    <li className="dropdown-link-sub" onClick={handleLinkClick} ><Link to="/Class-11-Neet">Class 11th</Link></li>
+                    <li className="dropdown-link-sub" onClick={handleLinkClick}>Class 12th</li>
+                    <li className="dropdown-link-sub" onClick={handleLinkClick}>Class 12th Plus</li>
                   </ul>
                 </li>
-                <li className="dropdown-link"><Link to="/JEE">JEE</Link>
-                  <ul className="dropdown-sub">
-                      <li className="dropdown-link-sub">Class 11th</li>
-                      <li className="dropdown-link-sub">Class 12th</li>
-                      <li className="dropdown-link-sub">Class 12th Plus</li>
+                <li className="dropdown-link"><Link to="/JEE" onClick={handleLinkClick} className='dropdown-link-container'>JEE</Link>
+                  <ul className="dropdown-sub " onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                      <li className="dropdown-link-sub" onClick={handleLinkClick}>Class 11th</li>
+                      <li className="dropdown-link-sub" onClick={handleLinkClick}>Class 12th</li>
+                      <li className="dropdown-link-sub" onClick={handleLinkClick}>Class 12th Plus</li>
                   </ul>
                 </li>
 
-                <li className="dropdown-link"><Link to="/Class10">Class 10</Link>
-                  <ul className="dropdown-sub">
-                      <li className="dropdown-link-sub">Class 11th</li>
-                      <li className="dropdown-link-sub">Class 12th</li>
-                      <li className="dropdown-link-sub">Class 12th Plus</li>
+                <li className="dropdown-link"><Link to="/Class10" onClick={handleLinkClick} className='dropdown-link-container'>Class 10</Link>
+                  <ul className="dropdown-sub" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                      <li className="dropdown-link-sub" onClick={handleLinkClick}>Class 11th</li>
+                      <li className="dropdown-link-sub" onClick={handleLinkClick}>Class 12th</li>
+                      <li className="dropdown-link-sub" onClick={handleLinkClick}>Class 12th Plus</li>
                     </ul>
                 </li>
               </ul>
@@ -52,8 +77,8 @@ function HeaderTop() {
             <li className={`list-links ${activeDropdown === 2 ? 'active' : ''}`} onClick={() => handleDropdownClick(2)}>
               Programs
               <ul className="dropdown">
-                <li className="dropdown-link"><Link to="/OnlineProgram">Online Program</Link></li>
-                <li className="dropdown-link"><Link to="/ClasroomProgram">Classroom Program</Link></li>
+                <li className="dropdown-link"><Link to="/OnlineProgram" onClick={handleLinkClick} className='dropdown-link-container'>Online Program</Link></li>
+                <li className="dropdown-link"><Link to="/ClasroomProgram" onClick={handleLinkClick} className='dropdown-link-container'>Classroom Program</Link></li>
               </ul>
             </li>
 
@@ -67,9 +92,9 @@ function HeaderTop() {
             <li className={`list-links ${activeDropdown === 4 ? 'active' : ''}`} onClick={() => handleDropdownClick(4)}>
               <Link to="/Test Series">Test Series</Link>
               <ul className="dropdown">
-                <li className="dropdown-link"><Link to="/Neet">Neet</Link></li>
-                <li className="dropdown-link"><Link to="/JEE">Jee Mains</Link></li>
-                <li className="dropdown-link"><Link to="/JEE">Jee Mains + Advance</Link></li>
+                <li className="dropdown-link"><Link to="/Neet" onClick={handleLinkClick} className='dropdown-link-container'>Neet</Link></li>
+                <li className="dropdown-link"><Link to="/JEE" onClick={handleLinkClick} className='dropdown-link-container'>Jee Mains</Link></li>
+                <li className="dropdown-link"><Link to="/JEE" onClick={handleLinkClick} className='dropdown-link-container'>Jee Mains + Advance</Link></li>
               </ul>
             </li>
 
