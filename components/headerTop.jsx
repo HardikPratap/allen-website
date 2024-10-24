@@ -52,23 +52,23 @@ function HeaderTop() {
                   </Link>
                   <ul className="dropdown-sub" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     <li className="dropdown-link-sub" onClick={handleLinkClick} ><Link to="/Class-11-Neet">Class 11th</Link></li>
-                    <li className="dropdown-link-sub" onClick={handleLinkClick}>Class 12th</li>
-                    <li className="dropdown-link-sub" onClick={handleLinkClick}>Class 12th Plus</li>
+                    <li className="dropdown-link-sub" onClick={handleLinkClick}><Link to="/Class-12-Neet">Class 12th</Link></li>
+                    <li className="dropdown-link-sub" onClick={handleLinkClick}><Link to="/Class-12-Dropers-Neet">Class 12th PLus</Link></li>
                   </ul>
                 </li>
                 <li className="dropdown-link"><Link to="/JEE" onClick={handleLinkClick} className='dropdown-link-container'>JEE</Link>
                   <ul className="dropdown-sub " onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                      <li className="dropdown-link-sub" onClick={handleLinkClick}>Class 11th</li>
-                      <li className="dropdown-link-sub" onClick={handleLinkClick}>Class 12th</li>
-                      <li className="dropdown-link-sub" onClick={handleLinkClick}>Class 12th Plus</li>
+                      <li className="dropdown-link-sub" onClick={handleLinkClick}><Link to="/Class-11-Jee">Class 11th</Link></li>
+                      <li className="dropdown-link-sub" onClick={handleLinkClick}><Link to="/Class-12-Jee">Class 12th</Link></li>
+                      <li className="dropdown-link-sub" onClick={handleLinkClick}><Link to="/Class-12-Dropers-Jee">Class 12th PLus</Link></li>
                   </ul>
                 </li>
 
                 <li className="dropdown-link"><Link to="/Class10" onClick={handleLinkClick} className='dropdown-link-container'>Class 10</Link>
                   <ul className="dropdown-sub" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                      <li className="dropdown-link-sub" onClick={handleLinkClick}>Class 11th</li>
-                      <li className="dropdown-link-sub" onClick={handleLinkClick}>Class 12th</li>
-                      <li className="dropdown-link-sub" onClick={handleLinkClick}>Class 12th Plus</li>
+                      <li className="dropdown-link-sub" onClick={handleLinkClick}><Link to="/Class-6">Class 6th</Link></li>
+                      <li className="dropdown-link-sub" onClick={handleLinkClick}><Link to="/Class-7">Class 7th</Link></li>
+                      <li className="dropdown-link-sub" onClick={handleLinkClick}><Link to="/Class-8">Class 8th</Link> </li>
                     </ul>
                 </li>
               </ul>
@@ -83,14 +83,14 @@ function HeaderTop() {
             </li>
 
             <li className={`list-links ${activeDropdown === 3 ? 'active' : ''}`} onClick={() => handleDropdownClick(3)}>
-              <Link to="/Scholarship">Scholarship</Link>
+              Scholarship
               <ul className="dropdown">
                 <li className="dropdown-link"><Link to="/Adsat">Adsat</Link></li>
               </ul>
             </li>
 
             <li className={`list-links ${activeDropdown === 4 ? 'active' : ''}`} onClick={() => handleDropdownClick(4)}>
-              <Link to="/Test Series">Test Series</Link>
+              Test Series
               <ul className="dropdown">
                 <li className="dropdown-link"><Link to="/Neet" onClick={handleLinkClick} className='dropdown-link-container'>Neet</Link></li>
                 <li className="dropdown-link"><Link to="/JEE" onClick={handleLinkClick} className='dropdown-link-container'>Jee Mains</Link></li>
@@ -98,13 +98,17 @@ function HeaderTop() {
               </ul>
             </li>
 
-            <li className="list-links"><Link to="/Study Material">Study Material</Link></li>
+            <li className="list-links">
+              {/* <Link to="/Study Material"> */}
+              Study Material
+              {/* </Link> */}
+              </li>
 
           </ul>
         </div>
         <div className="right-header">
           <button className='header-callBtn'><i className="ri-phone-fill"></i><span>Talk To Us</span></button>
-          <button className='header-loginBtn'>Login</button>
+          <button className='header-loginBtn'><span>Login</span></button>
         </div>
       </div>
     </div>
