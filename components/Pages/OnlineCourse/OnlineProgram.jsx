@@ -1,5 +1,5 @@
 import React from 'react';
-import "../Jee/jee.css"
+import "../Jee/Jee.css"
 import img1 from "../../../src/assets/onlineprogram1.webp"
 import LearningCard from '../Neet/LearningCard';
 import bannerimg3 from "../../../src/assets/neet_banner3.png"
