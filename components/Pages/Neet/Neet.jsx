@@ -6,7 +6,7 @@ import img1 from "../../../src/assets/neet1.webp"
 import img2 from "../../../src/assets/neet2.webp"
 import bannerimg2 from "../../../src/assets/neet_banner2.webp"
 import bannerimg3 from "../../../src/assets/neet_banner3.png"
-import ClassRoomImg from "../../../src/assets/neetClassRoom.webp"
+import ClassRoomImg from "../../../src/assets/neetClassroom.webp"
 import LearningCard from './LearningCard';
 
 
