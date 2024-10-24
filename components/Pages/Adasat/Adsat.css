@@ -1,0 +1,19 @@
+.class-container-adsat{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: unset;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.img-container-adsat{
+    width: 100%;
+    padding: 3rem 12rem;
+}
+
+.img-container-bottom-adsat{
+    margin-top: 4rem;
+    padding: 3rem 11rem;
+}

@@ -3,7 +3,6 @@ import "../../Neet/Pages/class11neet.css"
 import banner1 from "../../../../src/assets/class_bannertop_class6.webp"
 import recordimg1 from "../../../../src/assets/recordedImage.webp"
 import recordimg2 from "../../../../src/assets/recordedImage2.webp"
-import recordimg3 from "../../../../src/assets/recordedImage3.webp"
 import CoursePurchaseCard from '../../../PurchaseCard/CoursePurchaseCard'
 
 
