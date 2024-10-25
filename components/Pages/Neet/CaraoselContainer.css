@@ -43,4 +43,10 @@
     display: block;
     border-radius: 2rem;
   }
+/* ---------------------------------------------------------  */
 
+@media (max-width: 768px) {
+  .caraosel-container-neet{
+   display: none;
+  }
+}

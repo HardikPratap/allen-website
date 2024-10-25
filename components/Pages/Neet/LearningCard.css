@@ -52,3 +52,23 @@
     border: 1px solid white;
     border-radius: 999px;
 }
+/* --------------------------------------------------  */
+
+@media (max-width: 768px) {
+    .learning-container{
+        width: 100%;
+        height: 80%;
+    }
+    .text-logo .text {
+        font-size: .65rem;
+    }
+    .text-logo .logo i {
+        font-size: 20px;
+        /* align-items: center; */
+        /* background-color: inherit; */
+    }
+
+     .text-logo .logo {
+            height: 2.5rem;
+    }
+}

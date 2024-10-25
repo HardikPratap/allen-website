@@ -81,3 +81,44 @@ justify-content: space-between;
     margin-right: auto;
 }
 
+.text-left,
+.slider-container {
+    flex: 1; /* Make both sections take equal width */
+}
+
+/* For smaller screens, stack the two sections vertically */
+@media (max-width: 768px) {
+    .container-first {
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column; /* Stack items vertically */
+        padding: 1rem; /* Adjust padding */
+        gap: 2rem; /* Increase spacing between elements */
+    }
+    .banner{
+        padding: .5rem 2rem;
+    }
+
+    .container-two img{
+        width: 100%;
+    }
+
+    .container-two{
+        padding: .5rem 2rem;
+    }
+    .text-left,
+    .slider-container {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .heading {
+        font-size: 1.5rem; /* Adjust font size on smaller screens */
+    }
+
+    .subject-btn {
+        justify-content: center; /* Center buttons */
+        gap: 0.5rem;
+    }
+    
+
+}

@@ -11,3 +11,21 @@
     padding: 1.5rem;
 
 }
+
+@media (max-width: 768px) {
+    .container-3 {
+        padding: .5rem; /* Reduce padding on mobile */
+        margin-top: 1rem;
+    }
+    .container-3 .title{
+        font-size: 1rem;
+        text-align: center;
+}
+    
+
+    .stream-card {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+        gap: 1.5rem; /* Increase space between stacked cards */
+    }
+}

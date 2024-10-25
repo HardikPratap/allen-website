@@ -43,3 +43,19 @@
   .view-btn:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
+
+  @media (max-width: 768px) {
+    .card-container {
+        width: 90%; /* Full width on smaller screens */
+        height: auto;
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 1.4rem; /* Slightly smaller font size */
+    }
+
+    .view-btn {
+        padding: 8px 16px;
+    }
+}
